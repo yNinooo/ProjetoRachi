@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+font-face {
+    font-family: Sora;
+    src: url('../assets/fonts/Sora/Sora-VariableFont_wght.ttf');
+}
+
+:root {
+    --background_color: #EFF8FF;
+    --CardStyle_color1: #EFF8FF;
+    --CardStyle_color2: #293145;
+    --Button_color: #0F9aFE;
+    --Txt_color1: #293145;
+    --Txt_color2: #6E7275;
+    --Txt_color3: #FFFFFF;
+}
+
+@media screen and (max-width: 1440px) and (orientation: landscape){
+
+}
