@@ -1,0 +1,18 @@
+>>>>> Comandos Iniciais <<<<<
+git config --global user.name
+git config --list
+
+>>>>>Comandos Essenciais <<<<<
+git status
+git add .
+
+git log
+git commit -m
+
+git log
+git push origin main
+
+>>>>> Comandos Ocasionais <<<<<
+git init
+git clone
+git pull
