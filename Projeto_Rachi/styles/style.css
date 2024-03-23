@@ -24,6 +24,23 @@ font-face {
     --Txt_color3: #FFFFFF;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: auto;
+    padding: 20px;
+}
+
+.header-style__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-style__links.open {
+    padding: 10px;
+}
 
 
 

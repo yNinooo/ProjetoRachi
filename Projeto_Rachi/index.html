@@ -10,20 +10,22 @@
 </head>
 <body>
     <header>
-        <img class="img-rachi" src="./assets/icons/rachi.svg" alt="">
-
-        <button class="button-menu">
-            <img src="./assets/icons/menu hamburguer.svg" alt="">
-        </button>
-
-        <nav class="header-style__links open">
-            <ul>
-                <li><a href="#">Funcionalidade</a></li>
-                <li><a href="#">App</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+            <div class="header-style__menu">
+                <img class="img-rachi" src="./assets/icons/rachi.svg" alt="">  
+                <button id="button-menu">
+                    <img src="./assets/icons/menu hamburguer.svg" alt="">
+                </button>
+    
+            </div>
+    
+            <nav class="header-style__links open">
+                <ul>
+                    <li><a href="#">Funcionalidade</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>        
     </header>
 
     <main>
@@ -42,28 +44,98 @@
             <img src="./assets/images/img1.svg" alt="">
         </section>
 
-        <section class="body">
+        <section class="functions">
             <h1>Como funciona</h1>
 
-            <article class="card_body1">
+            <article class="card_functions1">
                 <img src="./assets/icons/icon1.svg" alt="">
-
+                <h2>Crie conexões</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, id?</p>
             </article>
 
-            <article class="card_body2">
+            <article class="card_functions2">
                 <img src="./assets/icons/icon2.svg" alt="">
-
+                <h2>100% gratuito</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, incidunt?</p>
             </article>
                 
-            <article class="card_body3">
+            <article class="card_functions3">
                 <img src="./assets/icons/icon3.svg" alt="">
-                
+                <h2>Compartilhamento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, itaque!</p>
+            </article>
+        </section>
+
+        <section class="download_app">
+            <h1>Baixe nosso app para desfrutar mais!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam soluta corrupti nisi, saepe in?</p>
+            <img src="./assets/images/googlePAI.svg" alt="">
+            <img src="./assets/images/APPStore.svg" alt="">
+        </section>
+
+        <section class="plans">
+            <h1>Nossos Planos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores ea omnis? Ipsum, nulla quod!</p>
+            
+            <article class="card_plans1">
+                <h1>Bronze</h1>
+
+                <div class="box_plans">
+                    <h2>R$</h2>
+                    <h2>28</h2>
+                    <h2>/mes</h2>
+                </div>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nihil maiores quas aperiam et aut.</p>
+                <button class="button_plans">Assinar</button>
             </article>
 
+            <article class="card_plans2">
+                <h1>Prata</h1>
+                <h3>PREFERIDO</h3>
+
+                <div class="box_plans">
+                    <h2>R$</h2>
+                    <h2>57</h2>
+                    <h2>/mes</h2>
+                </div>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nihil maiores quas aperiam et aut.</p>
+                <button class="button_plans">Assinar</button>
+            </article>
+
+            <article class="card_plans1">
+                <h1>Ouro</h1>
+
+                <div class="box_plans">
+                    <h2>R$</h2>
+                    <h2>94</h2>
+                    <h2>/mes</h2>
+                </div>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nihil maiores quas aperiam et aut.</p>
+               
+                <button class="button_plans">
+                    Assinar
+                </button>
+
+            </article>
         </section>
+
     </main>
     
-    <footer></footer>
+    <footer>
+        <h1>Contato</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda aliquam adipisci tempora quo dignissimos repellat quae, omnis accusantium maiores, tempore nam sed molestias totam?</p>
+        
+        <input type="text" placeholder="Seu melhor e-mail">
+
+        <button class="button_footer">
+            Enviar
+        </button>
+
+        &copy; Rachi - Todos os direitos reservados.
+    </footer>
 
     <script src="./scripts/script.js"></script>
 </body>
