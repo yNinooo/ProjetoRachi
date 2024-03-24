@@ -4,18 +4,22 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: Inter;
     src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
 
-font-face {
+
+@font-face {
     font-family: Sora;
     src: url('../assets/fonts/Sora/Sora-VariableFont_wght.ttf');
 }
 
+
 :root {
-    --background_color: #EFF8FF;
+    --background_color1: #FFFFFF;
+    --background_color2: #EFF8FF;
     --CardStyle_color1: #EFF8FF;
     --CardStyle_color2: #293145;
     --Button_color: #0F9aFE;
@@ -24,26 +28,442 @@ font-face {
     --Txt_color3: #FFFFFF;
 }
 
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
 body {
     overflow-x: hidden;
 }
 
+
 header {
     height: auto;
-    padding: 20px;
 }
 
+
 .header-style__menu {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--background_color1); 
+    /* box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.135); */
+    z-index: 9999; 
+}
+
+
+#button_menu{
+    background-color: transparent;
+    border: none;
+}
+
+
+.header-style__links{
+    background-color: var(--background_color1);
+    position:  absolute;
+    top: 70px;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+
+    /* propriedades para realizar a animação dos links */
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    display: block;  
+} 
+
+
+.header-style__links.open{
+    transform: translateX(0);
+}
+
+
+.header-style__links>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background_color1);
+    font-family: "Inter";
+    border-radius: 10px;
+ 
+}
+
+
+.header-style__links>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--Txt_color2);
+    transition: linear .4s all;
+
+}
+
+
+.header-style__links>ul>li>a:hover{
+    background-color: var(--Button_color);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--Txt_color3);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+.main_style{
+    background-color: var(--background_color2);
+    display: flex;
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.banner{
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    background-color: var(--background_color2);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title_banner{
+    width: 350px;
+    
+    margin-top: 20px;
+    font-family: "Sora";
+    font-size: 24px;
+    color: var(--Txt_color1);
+    color: var(--Txt_color1);
+    letter-spacing: 1px;
+    line-height: 30px;
+  
+}
+
+
+.button_banner{
+    margin-top: 20px;
+    width: 135px;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--Button_color);
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Txt_color3);
+    color: var(--Txt_color3);
+}
+
+
+.img_banner{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 0;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.functions{
+    height: auto;
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background_color1);
+}
+
+.functions>h1{
+   font-family: "Sora";
+   font-size: 24px;
+   color: var(--Txt_color1);
+
+}
+
+.card_functions{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card_functions>h2{
+    font-family: "Sora";
+    color: var(--Txt_color1);
+    font-size: 16px;
+}
+
+.card_functions>p{
+    line-height: 20px;
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Txt_color2);
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.download_app{
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.download_app>h1{
+    font-family: "Sora";
+    font-size: 26px;
+    color: var(--Txt_color1);
+}
+
+.download_app>p{
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Txt_color2);
+}
+
+
+.box_download{
+    /* border: 2px solid black; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.header-style__links.open {
-    padding: 10px;
+.img_download{
+    width: 160px;
+    height: 50px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.plans{
+    /* height: 300px;*/
+    background-color: var(--background_color1);
+    padding: 40px; 
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
+.plans>h1{
 
-@media screen and (max-width: 1440px) and (orientation: landscape){
+    font-family: "Sora";
+    font-size: 24px;
+    color: var(--Txt_color1);
+}
+
+
+.plans>p{
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Txt_color2);
+}
+
+
+.card_plans1{
+    width: 310px;
+    height: 350px;
+    padding: 5px;
+    background-color: var(--CardStyle_color1);
+    border-radius: 8px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_plans2{
+    width: 310px;
+    height: 350px;
+    padding: 5px;
+    background-color: var(--CardStyle_color2);
+    border-radius: 8px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_plans1,.card_plans2>p{
+    line-height: 25px;
+    font-family: "Inter";
+    font-size: 16px;
+    color: var(--Txt_color2);
+}
+
+
+.card_plans1>h1{
+    font-family: "Sora";
+    font-size: 24px;
+    color: var(--Txt_color1);
+}
+
+
+.box_plans1{
+    font-family: "Sora";
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--Txt_color1);
+}
+
+
+.box_plans1 sup, .box_plans1 span{
+    font-family: "Sora";
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Txt_color1);
+
 
 }
+
+
+.card_plans2>h1{
+    font-family: "Sora";
+    font-size: 24px;
+    color: var(--Txt_color3);
+}
+
+
+.card_plans2>h3{
+    padding: 5px;
+    border-radius: 50px;
+    width:135px ;
+    background-color: #0F9aFE;
+    font-family: "Inter";
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--Txt_color3);
+}
+
+
+.box_plans2{
+    font-family: "Sora";
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--Txt_color3);
+}
+
+
+.box_plans2 sup,.box_plans2 span{
+    font-family: "Sora";
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Txt_color3);
+
+}
+
+
+.button_plans{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    
+    width:150px ;
+    background-color: #0F9aFE;
+    font-family: "Inter";
+    font-size: 14px;
+    
+    color: var(--Txt_color3);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.background_footer{
+    background-image: url('../assets/images/mobile_computado_telefoen.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: 90%;
+}
+
+.inform_footer{
+    color: white;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inform_footer>h1{
+    font-family: "Sora";
+    font-size: 24px;
+}
+
+
+.inform_footer>p{
+    line-height: 25px;
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Txt_color2);
+}
+
+.email_footer{
+    padding-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid var(--Txt_color2);
+    width: 330px;
+    outline: none;
+    background-color: transparent;
+    color: var(--Txt_color3);
+}
+
+
+.button_footer{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    
+    width:312px ;
+    background-color: #0F9aFE;
+    font-family: "Inter";
+    font-size: 14px;
+    
+    color: var(--Txt_color3);
+}
+
+.copyright{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sora";
+    font-size: 14px;
+    color: var(--Txt_color1);
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+ @media screen and (max-width: 1440px) and (orientation: landscape){
+
+} 
