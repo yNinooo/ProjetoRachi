@@ -355,7 +355,7 @@ header {
     padding: 5px;
     border-radius: 50px;
     width:135px ;
-    background-color: #0F9aFE;
+    background-color: var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
     letter-spacing: 3px;
@@ -386,7 +386,7 @@ header {
     padding: 5px;
     
     width:150px ;
-    background-color: #0F9aFE;
+    background-color: var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
     
@@ -404,7 +404,7 @@ header {
 }
 
 .inform_footer{
-    color: white;
+    color: var(--Txt_color3);
     padding: 30px;
     display: flex;
     gap: 30px;
@@ -444,7 +444,7 @@ header {
     padding: 5px;
     
     width:312px ;
-    background-color: #0F9aFE;
+    background-color:var(--Button_color);
     font-family: "Inter";
     font-size: 14px;
     
