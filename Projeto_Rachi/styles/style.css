@@ -460,6 +460,9 @@ header {
     color: var(--Txt_color1);
 }
 
+.img2_download{
+    display: none;
+}
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 
@@ -471,15 +474,33 @@ header {
 
     }
 
+
+    .main_style{
+        justify-content: left;
+    }
+
     .banner{
+        height: 600px;
         flex-direction: row;
         justify-content: space-between;
     }
 
+    .title_banner>h1{
+        width: 400px;
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+
+    .img_banner{
+        width: 400px ;
+        height: 400px;
+    }
     
 
     .functions{
         width: 100%;
+        height: 350px;
         display: block;
         text-align: center;
 
@@ -494,56 +515,53 @@ header {
         width: 230px;
     }
 
-    .button_menu{
+
+    #button_menu{
         display: none;
-        z-index: 0;
     }
 
     .header-style__links{
-        background-color: var(--background_color1);
-    /* position:  absolute; */
-        width: 70%;
-        height: 0px;
-        display: flex; 
-        flex-direction: row;
+        top: 0;
+        width: 700px;
+        right: 50px;
+        height: 70px;
+        z-index: 99999;
+        position: fixed;
     }
 
     .header-style__links.open{
-        background-color: var(--background_color1);
-    /* position:  absolute; */
-        width: 70%;
-        height: 0px;
-        display: flex; 
-        flex-direction: row;
+        transform: translateX(0);
     }
 
     .header-style__links>ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--background_color1);
-    font-family: "Inter";
- 
-}
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .header-style__links>ul>li>a{
+        font-size: 16px;
+    }
 
 
-.header-style__links>ul>li>a{
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--Txt_color2);
-    transition: linear .4s all;
+    .download_app{
+        text-align: start;
+        margin-left: 100px;
+    }
 
-}
+    .download_app>p{
+        width: 490px;
+        justify-content: start;
+        left: 100px;
+        
+    }
 
-
-.header-style__links>ul>li>a:hover{
-    background-color: var(--Button_color);
-    border-radius: 8px;
-    color: var(--Txt_color3);
-}
+    .box_download{
+        width: 520px;
+        justify-content: start;
+    }
 
     
-    
+    .img2_download{
+        display: flex;
+    }
 }
